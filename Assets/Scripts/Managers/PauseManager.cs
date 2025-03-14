@@ -1,14 +1,20 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseManager : MonoBehaviour
 {
     public GameObject pauseMenuUI;
+
     [Header("Broadcast event channels")]
     public BoolEventChannel onTogglePauseEvent;
 
     [Header("Listen to event channels")]
     public BoolEventChannel onDebugConsoleOpenEvent;
 
+    [Header("UI Buttons")]
+    public Button restartButton;
+    public Button mainMenuButton;
     bool isGamePaused = false;
     bool isDebugConsoleEnabled = false;
 
@@ -16,6 +22,28 @@ public class PauseManager : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
     }
+
+    private void Start()
+{
+    if (restartButton != null)
+    {
+        restartButton.onClick.AddListener(RestartLevel);
+    }
+    else
+    {
+        Debug.LogError("restartButton n'est pas assigné dans l'inspecteur !");
+    }
+
+    if (mainMenuButton != null)
+    {
+        mainMenuButton.onClick.AddListener(GoToMainMenu);
+    }
+    else
+    {
+        Debug.LogError("mainMenuButton n'est pas assigné dans l'inspecteur !");
+    }
+}
+
 
     private void OnEnable()
     {
@@ -29,6 +57,7 @@ public class PauseManager : MonoBehaviour
             isGamePaused = !isGamePaused;
             TogglePause(isGamePaused);
         }
+
     }
 
     public void Resume()
@@ -78,4 +107,17 @@ public class PauseManager : MonoBehaviour
     {
         onDebugConsoleOpenEvent.OnEventRaised -= TogglePauseDebug;
     }
+
+    public void RestartLevel()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void GoToMainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
+    }
+
 }

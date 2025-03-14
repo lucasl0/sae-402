@@ -17,8 +17,15 @@ public class CurrentSceneManager : MonoBehaviour
 
     private void OnEnable()
     {
-        onLevelEnded.OnEventRaised += LoadScene;
-        onDebugConsoleOpenEvent.OnEventRaised += OnDebugConsoleOpen;
+        if (onLevelEnded != null)
+            onLevelEnded.OnEventRaised += LoadScene;
+        else
+            Debug.LogWarning("onLevelEnded is not assigned.");
+
+        if (onDebugConsoleOpenEvent != null)
+            onDebugConsoleOpenEvent.OnEventRaised += OnDebugConsoleOpen;
+        else
+            Debug.LogWarning("onDebugConsoleOpenEvent is not assigned.");
     }
 
     public void LoadScene(string sceneName)
@@ -73,12 +80,28 @@ public class CurrentSceneManager : MonoBehaviour
 
     private void OnDisable()
     {
-        onLevelEnded.OnEventRaised -= LoadScene;
-        onDebugConsoleOpenEvent.OnEventRaised -= OnDebugConsoleOpen;
+        if (onLevelEnded != null)
+            onLevelEnded.OnEventRaised -= LoadScene;
+
+        if (onDebugConsoleOpenEvent != null)
+            onDebugConsoleOpenEvent.OnEventRaised -= OnDebugConsoleOpen;
     }
 
     private void OnDebugConsoleOpen(bool debugConsoleOpened)
     {
         isDebugConsoleOpened = debugConsoleOpened;
     }
+    public void StartGame()
+{
+    string firstLevelSceneName = "Level1"; // Assure-toi que le nom de la scène du premier niveau est correct
+    if (UtilsScene.DoesSceneExist(firstLevelSceneName))
+    {
+        SceneManager.LoadScene(firstLevelSceneName); // Charge la scène du premier niveau
+    }
+    else
+    {
+        Debug.LogError($"La scène {firstLevelSceneName} n'a pas été trouvée. Assurez-vous qu'elle est ajoutée aux paramètres de construction.");
+    }
+}
+
 }
