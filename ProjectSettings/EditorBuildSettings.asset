@@ -17,4 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Debug.unity
     guid: 7a3a156fd9ebd9a4597a65b167720820
+  - enabled: 1
+    path: "Assets/Scenes/Cr\xE9dits.unity"
+    guid: d59c4e8f0ffa8744594e56ecec5e24ba
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
