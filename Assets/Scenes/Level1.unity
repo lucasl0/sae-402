@@ -8944,6 +8944,10 @@ PrefabInstance:
       propertyPath: 'listWaypoints.Array.data[3]'
       value: 
       objectReference: {fileID: 1104703867}
+    - target: {fileID: 8848792254482967011, guid: 378c833a373245b4ba316483c73db1e7, type: 3}
+      propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
