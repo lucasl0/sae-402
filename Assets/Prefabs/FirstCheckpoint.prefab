@@ -128,7 +128,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -149,7 +149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bc2d: {fileID: 4507492021980349745}
-  lastCheckpointposition: {fileID: 0}
+  lastCheckpointposition: {fileID: 11400000, guid: ed4d767af42e98249a8b36e21cecee8d, type: 2}
+  animator: {fileID: 8625607497018466507}
 --- !u!95 &8625607497018466507
 Animator:
   serializedVersion: 7
