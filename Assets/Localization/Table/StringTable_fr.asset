@@ -19,7 +19,23 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 21400199168
-    m_Localized: Bonjour
+    m_Localized: Commencer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14517841764352
+    m_Localized: "Cr\xE9dits"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15158752387072
+    m_Localized: Quitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15672885977088
+    m_Localized: Fait par Lucas LEO et Shaun QUADRAO,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15996602359808
+    m_Localized: "\xE9tudiants en BUT MMI 2024-2025"
     m_Metadata:
       m_Items: []
   references:
