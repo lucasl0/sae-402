@@ -38,6 +38,18 @@ MonoBehaviour:
     m_Localized: Students in BUT MMI 2024-2025
     m_Metadata:
       m_Items: []
+  - m_Id: 17072311312384
+    m_Localized: Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17510540582912
+    m_Localized: Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18105603268608
+    m_Localized: Game Over
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

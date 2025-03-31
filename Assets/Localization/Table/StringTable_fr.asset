@@ -38,6 +38,18 @@ MonoBehaviour:
     m_Localized: "\xE9tudiants en BUT MMI 2024-2025"
     m_Metadata:
       m_Items: []
+  - m_Id: 17072311312384
+    m_Localized: Recommencer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17510540582912
+    m_Localized: Menu Principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18105603268608
+    m_Localized: Fin de la partie
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

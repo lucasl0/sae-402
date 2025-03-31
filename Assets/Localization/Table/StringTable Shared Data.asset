@@ -35,6 +35,18 @@ MonoBehaviour:
     m_Key: Etudiant
     m_Metadata:
       m_Items: []
+  - m_Id: 17072311312384
+    m_Key: Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17510540582912
+    m_Key: Menu Principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18105603268608
+    m_Key: End Game
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
