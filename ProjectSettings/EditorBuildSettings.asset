@@ -23,5 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Cr\xE9dits.unity"
     guid: d59c4e8f0ffa8744594e56ecec5e24ba
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: d0b626b3eb97c984c9bc4b10aa5a46c5, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 32f7640028c2ee4419ecd9205c69acc0, type: 2}
   m_UseUCBPForAssetBundles: 0
