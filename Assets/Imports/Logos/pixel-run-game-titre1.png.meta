@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f9c2924faa6c30844a1d9f6aedb13a06
+guid: 6f6721b6820c13248894c68fa6551ba1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1682357823324501176
-    second: c1fcf4295fbd348a867217e5e70352be_0
+      213: -6587706626451643931
+    second: pixel-run-game-titre1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: c1fcf4295fbd348a867217e5e70352be_0
+      name: pixel-run-game-titre1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 700
-        height: 400
+        width: 520
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b43b5cd68fe85710800000000000000
-      internalID: 1682357823324501176
+      spriteID: 5e1ecd5f9b3c394a0800000000000000
+      internalID: -6587706626451643931
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      c1fcf4295fbd348a867217e5e70352be_0: 1682357823324501176
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
