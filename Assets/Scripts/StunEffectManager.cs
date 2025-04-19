@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -34,8 +35,9 @@ public class StunEffectManager : MonoBehaviour
             transform.position.y,
             transform.position.z
         );
+
         List<StunEffectItem> listObj = new List<StunEffectItem>();
-        int nbItemsPerSide = (int)Mathf.Ceil((float) nbIconsToDisplay / 2);
+        int nbItemsPerSide = Mathf.CeilToInt((float) nbIconsToDisplay / 2);
 
         for (int i = 0; i < 2; i++)
         {
@@ -74,10 +76,25 @@ public class StunEffectManager : MonoBehaviour
 
             listStunEffects.Add(stunEffect);
         }
+
+        // Cacher l'effet au démarrage
+        ToggleVisiblity(false);
     }
 
     public void ToggleVisiblity(bool isVisible)
     {
         listStunEffects.ForEach((item) => item.ToggleVisiblity(isVisible));
+    }
+
+    public void TriggerStun(float duration)
+    {
+        StartCoroutine(HandleStun(duration));
+    }
+
+    private IEnumerator HandleStun(float duration)
+    {
+        ToggleVisiblity(true);
+        yield return new WaitForSeconds(duration);
+        ToggleVisiblity(false);
     }
 }
